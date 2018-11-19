@@ -71,9 +71,7 @@ func (p *Player) IsArrived() bool {
 
 func (p *Player) Update(){
 	if !p.IsArrived(){
-		dir := p.targetPos.Sub(p.currPos).Normalize
-
-		// newPos := p.currPos.Add(dir.Scale(p.speed))
+		dir := p.targetPos.Sub(p.currPos).Normalize()
         newPos := p.currPos.Add(dir.Scale(p.speed))
 		p.currPos = newPos
 	}
