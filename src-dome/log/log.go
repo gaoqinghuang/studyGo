@@ -1,0 +1,19 @@
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"log"
+)
+
+type A struct {
+	name string
+	num uint32
+}
+func main() {
+
+	var buf bytes.Buffer
+	logger := log.New(&buf, "logger: ", log.Lshortfile)
+	logger.Print("Hello, log file!")
+	fmt.Print(&buf)
+}

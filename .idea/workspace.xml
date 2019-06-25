@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d35d4ca-7aca-467f-bb59-20cc68915bdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src-dome/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/99.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/anytype_func.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/array.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/callevent.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chan.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/change_type.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/closure.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/const.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/construct.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curl.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/defer.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/factorial.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fibonacci.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flag.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/func_chain.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/func_classfunc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_move.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/http.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/if.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaceDict.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaceEmpty.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface_type.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logService.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niming_jiekou.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/panic.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pointer.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/range.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recover.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resolveTime.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sinImage.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/size.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slice.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/struct.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/structInlaid.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/structJicheng.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/struct_func.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/time.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeAssertions.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/variable_param.go" beforeDir="false" />
-    </list>
+    <list default="true" id="5d35d4ca-7aca-467f-bb59-20cc68915bdc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +10,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../环境/src/log/example_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src-dome/log/log.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#13#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src-dome/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="50">
-                <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/../环境/src/log/log.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="72" column="7" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../环境/src/bytes/buffer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Flags</find>
+      <find>Output(</find>
+      <find>std</find>
+    </findStrings>
   </component>
   <component name="GOROOT" path="D:\go\环境" />
   <component name="Git.Settings">
@@ -86,6 +66,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src-dome/README.md" />
+        <option value="$PROJECT_DIR$/src-dome/log/log.go" />
       </list>
     </option>
   </component>
@@ -110,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,13 +98,20 @@
               <item name="程序" type="b2602c69:ProjectViewProjectNode" />
               <item name="程序" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="程序" type="b2602c69:ProjectViewProjectNode" />
+              <item name="程序" type="462c0819:PsiDirectoryNode" />
+              <item name="src-dome" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -152,7 +139,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -205,6 +192,37 @@
             <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../环境/src/bytes/buffer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../环境/src/log/example_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-dome/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#13#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../环境/src/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="72" column="7" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="7" />
         </state>
       </provider>
     </entry>
