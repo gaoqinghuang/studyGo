@@ -1,13 +1,15 @@
 package main
+
 import "fmt"
 
 //变量的声明
-var a  = []int{2,3,4}
+var a = []int{2, 3, 4}
+
 // var a  = []int{}
 
 var ptr = [3]*int{}
- // var ptr []*int;
 
+// var ptr []*int;
 
 //指针
 func main() {

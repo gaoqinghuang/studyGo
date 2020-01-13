@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -11,7 +12,6 @@ func main() {
 	fmt.Println(any)
 	any = false
 	fmt.Println(any)
-
 
 	var a int = 1
 	var b interface{} = a

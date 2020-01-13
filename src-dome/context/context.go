@@ -8,8 +8,6 @@ import (
 func main() {
 	//像是一个总控制的包
 
-
-
 	type favContextKey string
 
 	f := func(ctx context.Context, k favContextKey) {

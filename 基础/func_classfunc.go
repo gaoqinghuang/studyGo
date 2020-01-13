@@ -1,18 +1,18 @@
 package main
+
 import (
 	"fmt"
 )
 
 type class struct {
-	
 }
 
 func (c class) Do(v int) {
-	fmt.Println("class method",v)
+	fmt.Println("class method", v)
 }
 
-func Do(v int){
-	fmt.Println("function",v)
+func Do(v int) {
+	fmt.Println("function", v)
 }
 
 func main() {
@@ -25,6 +25,6 @@ func main() {
 	delegate(100)
 
 	delegate = Do
-    
-    delegate(100)
+
+	delegate(100)
 }

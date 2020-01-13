@@ -8,17 +8,16 @@ type Invoker interface {
 	Call(interface{})
 }
 
-type Struct struct{
-
+type Struct struct {
 }
 
-func (s *Struct) Call(p interface{}){
-	fmt.Println("from struct",p)
+func (s *Struct) Call(p interface{}) {
+	fmt.Println("from struct", p)
 }
 
-type FuncCaller func (interface{})
+type FuncCaller func(interface{})
 
-func (f FuncCaller) Call(p interface{}){
+func (f FuncCaller) Call(p interface{}) {
 	f(p)
 }
 
@@ -30,7 +29,7 @@ func main() {
 	invoker = s
 	invoker.Call("hello")
 
-	invoker = FuncCaller(func(v interface{}){
+	invoker = FuncCaller(func(v interface{}) {
 		fmt.Println("from function", v)
 	})
 

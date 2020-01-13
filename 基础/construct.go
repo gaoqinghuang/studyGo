@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -12,13 +13,13 @@ type BlackCat struct {
 	Cat
 }
 
-func NewCat(name string) *Cat{
-	return  &Cat{
-		Name : name,
+func NewCat(name string) *Cat {
+	return &Cat{
+		Name: name,
 	}
 }
 
-func NewBlackCat(color string) *BlackCat{
+func NewBlackCat(color string) *BlackCat {
 	cat := &BlackCat{}
 	cat.Color = color
 
@@ -26,7 +27,7 @@ func NewBlackCat(color string) *BlackCat{
 }
 
 //实现构造函数
-func main(){
+func main() {
 	cat := NewBlackCat("black")
 	fmt.Println(cat)
 }

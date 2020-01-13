@@ -1,6 +1,6 @@
 package main
 
-func main()  {
+func main() {
 	//总结。主要用的字符串剪切
 
 	//群体替换
@@ -40,7 +40,6 @@ func main()  {
 	//}
 	//fmt.Println(strings.IndexFunc("Hello, 世界", f))//7
 	//fmt.Println(strings.IndexFunc("Hello, world", f))//0
-
 
 	//字符c在s中第一次出现的位置，不存在则返回-1。
 	//fmt.Println(strings.IndexByte("0nde1Byte",110))//这里的110是n,true

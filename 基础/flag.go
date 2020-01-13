@@ -1,10 +1,11 @@
 package main
+
 import (
-	"fmt"
 	"flag"
+	"fmt"
 )
 
-var mode = flag.String("mode1","1","process mode")
+var mode = flag.String("mode1", "1", "process mode")
 
 func main() {
 	flag.Parse()

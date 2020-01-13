@@ -1,19 +1,20 @@
 package main
+
 import (
 	"fmt"
 )
 
 type MyInt int
 
-func (m MyInt) IsZero() bool{
+func (m MyInt) IsZero() bool {
 	return m == 0
 }
 
-func (m MyInt) Add(other MyInt) MyInt{
+func (m MyInt) Add(other MyInt) MyInt {
 	return other + MyInt(m)
 }
 
-func main(){
+func main() {
 	var b MyInt
 	// b := 0
 	fmt.Println(b.IsZero())

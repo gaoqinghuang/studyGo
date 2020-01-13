@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -6,26 +7,26 @@ import (
 type Flying struct {
 }
 
-func (f *Flying) Fly(){
+func (f *Flying) Fly() {
 	fmt.Println("I can fly")
 }
 
-type Walkable struct{
+type Walkable struct {
 }
 
-func (w *Walkable) Walk(){
+func (w *Walkable) Walk() {
 	fmt.Println("I can walk")
 }
 
-type Human struct{
+type Human struct {
 	Walkable
 }
-type Bird struct{
+type Bird struct {
 	Walkable
 	Flying
 }
 
-func main(){
+func main() {
 	b := new(Bird)
 	fmt.Println("Bird:")
 	b.Fly()

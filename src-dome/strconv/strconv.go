@@ -16,4 +16,3 @@ func main() {
 	//int或者uint的位数
 	//fmt.Println(strconv.IntSize)
 }
-

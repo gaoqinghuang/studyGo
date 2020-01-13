@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -25,18 +26,17 @@ func main() {
 	// }
 	// fmt.Println(i)
 
+OuterLoop: //break也有类似的效果，都是设置跳出的循环，本来只是跳出内层的
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 5; j++ {
+			switch j {
+			case 2:
+				fmt.Println(i, j)
+				continue OuterLoop
+			}
+		}
+	}
 
-	OuterLoop://break也有类似的效果，都是设置跳出的循环，本来只是跳出内层的
-    for i := 0; i < 2; i++ {
-        for j := 0; j < 5; j++ {
-            switch j {
-            case 2:
-                fmt.Println(i, j)
-                continue OuterLoop
-            }
-        }
-    }
-	
 	// var grade = "A"
 	// switch {
 	// 	case "C" == grade:

@@ -6,32 +6,32 @@ import (
 )
 
 type Screen struct {
-	Size float32
-	ResX,ResY int
+	Size       float32
+	ResX, ResY int
 }
 
-type Battery struct{
+type Battery struct {
 	Capacity int
 }
 
-func genJsonData() []byte{
-	raw := &struct{
+func genJsonData() []byte {
+	raw := &struct {
 		Screen
 		Battery
 		HasTouchID bool
 	}{
-		Screen:Screen{
-			Size:5.5,
-			ResY:1920,
-			ResX:1080,
+		Screen: Screen{
+			Size: 5.5,
+			ResY: 1920,
+			ResX: 1080,
 		},
-		Battery:Battery{
+		Battery: Battery{
 			2910,
 		},
 		HasTouchID: true,
 	}
 
-	jsonData,_ := json.Marshal(raw)
+	jsonData, _ := json.Marshal(raw)
 
 	return jsonData
 }
@@ -39,20 +39,20 @@ func genJsonData() []byte{
 func main() {
 	jsonData := genJsonData()
 	fmt.Println(string(jsonData))
-	screenAndTouch := struct{
+	screenAndTouch := struct {
 		Screen
 		HasTouchID bool
 	}{}
 
-	json.Unmarshal(jsonData,&screenAndTouch)
+	json.Unmarshal(jsonData, &screenAndTouch)
 
-	fmt.Printf("%+v\n",screenAndTouch)
-	batteryAndTouch := struct{
+	fmt.Printf("%+v\n", screenAndTouch)
+	batteryAndTouch := struct {
 		Battery
 		HasTouchID bool
 	}{}
 
-	json.Unmarshal(jsonData,&batteryAndTouch)
+	json.Unmarshal(jsonData, &batteryAndTouch)
 
-	fmt.Printf("%+v\n",batteryAndTouch)
+	fmt.Printf("%+v\n", batteryAndTouch)
 }

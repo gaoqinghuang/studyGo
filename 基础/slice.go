@@ -1,11 +1,13 @@
 package main
+
 import "fmt"
 
 // var a = make([] int,3,5)
-var a = [] int{}
-var b = [3] int{1,2,3} 
+var a = []int{}
+var b = [3]int{1, 2, 3}
+
 func main() {
-	// s :=[] int {1,2,3 } 
+	// s :=[] int {1,2,3 }
 	// printSlice(a)
 	// a = append(a,0)
 	// printSlice(a)
@@ -70,12 +72,12 @@ func main() {
 	// fmt.Println(b)
 
 	//删除元素
-	seq := []string{"a", "b", "c", "d", "e"}//切片,如果[]里面有带数字就是数组
+	seq := []string{"a", "b", "c", "d", "e"} //切片,如果[]里面有带数字就是数组
 
-	seq = append(seq[0:2],seq[3:5]...)
+	seq = append(seq[0:2], seq[3:5]...)
 	fmt.Println(seq)
 }
 
-func printSlice(x []int){
-   fmt.Printf("len=%d cap=%d slice=%v\n",len(x),cap(x),x)
+func printSlice(x []int) {
+	fmt.Printf("len=%d cap=%d slice=%v\n", len(x), cap(x), x)
 }

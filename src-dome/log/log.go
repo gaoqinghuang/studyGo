@@ -8,8 +8,9 @@ import (
 
 type A struct {
 	name string
-	num uint32
+	num  uint32
 }
+
 func main() {
 
 	var buf bytes.Buffer

@@ -22,6 +22,11 @@ func main() {
 		"grpc-services-mp",
 		"grpc-services-user",
 		"http-services-user",
+		"http-services-common",
+		"grpc-service-common",
+		"grpc-services-xiyou-common",
+		"http-services-message",
+		"http-services-third-party",
 	}
 
 	var a int

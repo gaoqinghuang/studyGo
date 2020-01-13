@@ -1,20 +1,22 @@
 package main
+
 import (
 	"fmt"
 	"runtime"
 )
 
-type panicContext struct{
+type panicContext struct {
 	function string
 }
+
 func ProtectRun(entry func()) {
-	defer func(){
+	defer func() {
 		err := recover()
-		switch err.(type){
+		switch err.(type) {
 		case runtime.Error:
-			fmt.Println("runtime error:",err)
+			fmt.Println("runtime error:", err)
 		default:
-			fmt.Println("error:",err)
+			fmt.Println("error:", err)
 		}
 	}()
 
@@ -23,7 +25,7 @@ func ProtectRun(entry func()) {
 
 func main() {
 	fmt.Println("运行前")
-	ProtectRun(func(){
+	ProtectRun(func() {
 		fmt.Println("手动宕机前")
 
 		panic(&panicContext{
@@ -33,7 +35,7 @@ func main() {
 		fmt.Println("手动宕机后")
 	})
 
-	ProtectRun(func(){
+	ProtectRun(func() {
 		fmt.Println("赋值宕机前")
 		var a *int
 		*a = 1

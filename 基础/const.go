@@ -1,26 +1,30 @@
 package main
+
 import "fmt"
+
 // import "unsafe"
 
 const (
 	a = iota
-	b 
-	c 
+	b
+	c
 	d = "ha"
-	e 
+	e
 	f = 100
-	g 
+	g
 	h = iota
-	i 
+	i
 )
+
 var z = 10
 var j *int
+
 func main() {
 	j = &z
 	// var s
-	fmt.Println("%T",z)
-	fmt.Println("%d",j)
-	fmt.Println("%d",&z)
+	fmt.Println("%T", z)
+	fmt.Println("%d", j)
+	fmt.Println("%d", &z)
 	// fmt.Println(a,b,c,d,e,f,g,h,i)
-		// fmt.Println(a,b,c)
+	// fmt.Println(a,b,c)
 }

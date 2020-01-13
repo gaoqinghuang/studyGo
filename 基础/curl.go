@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	"io/ioutil"
@@ -9,8 +10,8 @@ import (
 
 func main() {
 	client := &http.Client{}
-	req,err := http.NewRequest("POST","http://163.com/",strings.NewReader("key=value"))
-	fmt.Println(req,err)
+	req, err := http.NewRequest("POST", "http://163.com/", strings.NewReader("key=value"))
+	fmt.Println(req, err)
 
 	if err != nil {
 		fmt.Println(err)
@@ -18,9 +19,9 @@ func main() {
 		return
 	}
 
-	req.Header.Add("User-Agent","myClient")	
+	req.Header.Add("User-Agent", "myClient")
 
-	resp,err := client.Do(req)
+	resp, err := client.Do(req)
 
 	if err != nil {
 		fmt.Println(err)
@@ -28,7 +29,7 @@ func main() {
 		return
 	}
 
-	data,err := ioutil.ReadAll(resp.Body)
+	data, err := ioutil.ReadAll(resp.Body)
 	fmt.Println(string(data))
 
 	defer resp.Body.Close()

@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 //给结构体定义方法
@@ -28,24 +29,23 @@ func main() {
 	// fmt.Println(namedRetValues())
 
 	in := Data{
-		complax: []int{1,2,3},
+		complax: []int{1, 2, 3},
 		instance: InnerData{
 			5,
 		},
 		ptr: &InnerData{1},
 	}
 
-	fmt.Printf("%+v\n",in)
-	fmt.Printf("%+p\n",&in)
+	fmt.Printf("%+v\n", in)
+	fmt.Printf("%+p\n", &in)
 
 	out := passByValue(in)
 
-
-	fmt.Printf("%+v\n",out)
-	fmt.Printf("%+p\n",&out)
+	fmt.Printf("%+v\n", out)
+	fmt.Printf("%+p\n", &out)
 }
 
-func max(num1,num2 int,num3 string) int{
+func max(num1, num2 int, num3 string) int {
 	// var res int
 	// if num1>num2{
 	// 	res = num1
@@ -55,24 +55,24 @@ func max(num1,num2 int,num3 string) int{
 	return 1
 }
 func namedRetValues() (a, b int) {
-    a = 1
-    return a, b
+	a = 1
+	return a, b
 }
 
 //参数的传递
-type Data struct{
-	complax []int
+type Data struct {
+	complax  []int
 	instance InnerData
-	ptr *InnerData
+	ptr      *InnerData
 }
 
-type InnerData struct{
+type InnerData struct {
 	a int
 }
 
 func passByValue(inFunc Data) Data {
-	fmt.Printf("%+v\n",inFunc)
-	fmt.Printf("%p\n",&inFunc)
+	fmt.Printf("%+v\n", inFunc)
+	fmt.Printf("%p\n", &inFunc)
 
 	return inFunc
 }

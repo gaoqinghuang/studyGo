@@ -1,16 +1,17 @@
 package main
+
 import (
 	"fmt"
 )
 
 type BasicColor struct {
-	R,G,B float32
+	R, G, B float32
 }
 
-type Color struct{
+type Color struct {
 	BasicColor
 	Alpha float32
-	R float32
+	R     float32
 }
 
 // func main() {
@@ -27,32 +28,31 @@ type Color struct{
 
 //匿名结构体的定义
 
-type Wheel struct{
+type Wheel struct {
 	Size int
 }
 
-type Car struct{
+type Car struct {
 	Wheel
-	Engine struct{
+	Engine struct {
 		Power int
-		Type string
+		Type  string
 	}
 }
 
 func main() {
-	car:= Car{
+	car := Car{
 		Wheel: Wheel{
 			Size: 10,
 		},
-		Engine: struct{
+		Engine: struct {
 			Power int
-			Type string
+			Type  string
 		}{
 			Power: 143,
-			Type: "1.4T",
+			Type:  "1.4T",
 		},
 	}
 	fmt.Println(car)
 	// fmt.Printf("%+v",car)
 }
-

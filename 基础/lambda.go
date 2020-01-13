@@ -1,9 +1,12 @@
 package main
+
 import (
-	"fmt"
 	"flag"
+	"fmt"
 )
-	var skill = flag.String("skill"," ","skill help")
+
+var skill = flag.String("skill", " ", "skill help")
+
 func main() {
 	// a := func (a int) int{
 	// 	return a
@@ -23,26 +26,25 @@ func main() {
 
 	//使用匿名函数实现操作封装
 
-
 	flag.Parse()
 	var skil = map[string]func(){
-		"w":func(){
+		"w": func() {
 			fmt.Println("w")
 		},
-		"h":func(){
+		"h": func() {
 			fmt.Println("h")
 		},
 	}
 
-	if f,ok := skil[*skill]; ok{
+	if f, ok := skil[*skill]; ok {
 		f()
-	}else{
+	} else {
 		fmt.Println("skill not found")
 	}
 }
 
-func visit(list [] int,f func(int)) {
-	for _,v := range list {
+func visit(list []int, f func(int)) {
+	for _, v := range list {
 		f(v)
 	}
 }

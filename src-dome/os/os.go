@@ -21,7 +21,6 @@ func main() {
 	fmt.Println("processState PID:", processState.Pid()) //获取PID
 	fmt.Println("ProcessExit:", processState.Exited())   //获取进程是否退出
 
-
 	//file, _ := os.OpenFile("xiaogao.txt", os.O_APPEND, 0)
 	//defer file.Close()
 	//

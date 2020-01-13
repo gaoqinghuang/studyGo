@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -14,18 +15,18 @@ type Walker interface {
 type bird struct {
 }
 
-func (b *bird) Fly(){
-	fmt.Println ("bird fly")
+func (b *bird) Fly() {
+	fmt.Println("bird fly")
 }
 
-func (b *bird) Walk(){
+func (b *bird) Walk() {
 	fmt.Println("bird walk")
 }
 
-type pig struct{
+type pig struct {
 }
 
-func (p *pig) Walk(){
+func (p *pig) Walk() {
 	fmt.Println("pig walk")
 }
 
@@ -51,8 +52,8 @@ func main() {
 
 	p1 := new(pig)
 	var a Walker = p1
-	p2,is := a.(*pig)
-	if is{
+	p2, is := a.(*pig)
+	if is {
 		fmt.Printf("p1=%p p2=%p", p1, p2)
 	}
 

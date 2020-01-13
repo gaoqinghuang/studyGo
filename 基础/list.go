@@ -1,7 +1,8 @@
 package main
+
 import (
-	"fmt"
 	"container/list"
+	"fmt"
 )
 
 func main() {
@@ -14,11 +15,11 @@ func main() {
 
 	element := l.PushBack("fist")
 
-	l.InsertAfter("high",element)
-	l.InsertBefore("noon",element) //67, canon, noon, fist, high
-	l.Remove(element) //	67, canon, noon, high
+	l.InsertAfter("high", element)
+	l.InsertBefore("noon", element) //67, canon, noon, fist, high
+	l.Remove(element)               //	67, canon, noon, high
 
-	for i := l.Front(); i !=nil; i = i.Next() {
+	for i := l.Front(); i != nil; i = i.Next() {
 		fmt.Println(i.Value)
 	}
 }

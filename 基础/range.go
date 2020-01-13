@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -6,9 +7,9 @@ func main() {
 	// // var sum int
 	// // sum :int
 	// for i,num := range a{
-	// fmt.Println(i,"=>",num)	
+	// fmt.Println(i,"=>",num)
 	// }
 	for i, c := range "go" {
-        fmt.Println(i, c)
-    }
+		fmt.Println(i, c)
+	}
 }

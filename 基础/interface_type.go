@@ -1,8 +1,8 @@
 package main
+
 import (
 	"fmt"
 )
-
 
 type Service interface {
 	Start()
@@ -11,15 +11,15 @@ type Service interface {
 
 type Logger struct{}
 
-func (g *Logger) Log(l string){
+func (g *Logger) Log(l string) {
 	fmt.Println("我是log")
 }
 
-type GameService struct{
+type GameService struct {
 	Logger
 }
 
-func (g *GameService) Start(){
+func (g *GameService) Start() {
 
 }
 

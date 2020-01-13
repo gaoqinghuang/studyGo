@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 	// "os"
@@ -7,7 +8,7 @@ import (
 
 /*
 * 这个是一个不好的教程，看正常的看下面那个
-*/
+ */
 // type DivideError struct {
 // 	divider int
 // 	dividee int
@@ -19,7 +20,7 @@ import (
 // //     dividee: %d
 // //     divider: 0
 // // `
-// 	strFormat := `Cannot proceed, the 
+// 	strFormat := `Cannot proceed, the
 // 	divider is zero.dividee: %d divider: 0`  //""和··的区别在于一个会保留空格空行，一个不会
 // 	return fmt.Sprintf(strFormat,de.dividee)
 // }
@@ -50,10 +51,9 @@ import (
 // 	}
 // }
 
-
 /*
 *看这个
-*/
+ */
 
 // var errDivisionByZero = errors.New("divsion by zero")
 
@@ -71,28 +71,28 @@ import (
 
 //自定义错误
 
-type ParseError struct{
+type ParseError struct {
 	Filename string
-	Line int
+	Line     int
 }
 
-func (e *ParseError) Error() string{
-	return fmt.Sprintf("%s:%d",e.Filename,e.Line)
+func (e *ParseError) Error() string {
+	return fmt.Sprintf("%s:%d", e.Filename, e.Line)
 }
 
-func newParseError(Filename string,line int) error {
-	return &ParseError{Filename,line}
+func newParseError(Filename string, line int) error {
+	return &ParseError{Filename, line}
 }
 
 func main() {
 	var e error
-	e = newParseError("main.go",1)
+	e = newParseError("main.go", 1)
 
 	fmt.Println(e.Error())
 
-	switch detail := e.(type){
+	switch detail := e.(type) {
 	case *ParseError:
-		fmt.Printf("Filename:%s Line:%d\n",detail.Filename,detail.Line)
+		fmt.Printf("Filename:%s Line:%d\n", detail.Filename, detail.Line)
 	default:
 		fmt.Println("other error")
 	}

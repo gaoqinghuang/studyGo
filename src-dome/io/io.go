@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	data,_ := ioutil.ReadFile("text.txt")
+	data, _ := ioutil.ReadFile("text.txt")
 	//err := ioutil.WriteFile("text.txt",[]byte("我"),666)
 	fmt.Println(string(data))
 }
